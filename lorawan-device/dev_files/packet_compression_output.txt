@@ -1,0 +1,95 @@
+Current output from the python reconstruction: (note the last two ints)
+(
+    [21.299999237060547, 21.399999618530273, 21.350000381469727, 21.549999237060547, 21.229999542236328, 22.010000228881836], 
+    [3200, 4201, 5188, 6267, 7456, 8712]
+)
+
+Compression output:
+Add temp 21.299999: Add 1101686374 (41aa6666)
+Add time 3200: Add 3200 (c80)
+Add temp 21.400000, encoded as 15555Add bit 1
+Add bit 1
+Add 15 (f)
+Add 17 (11)
+Add 87381 (15555)
+Adding time 4201, encoded as 1001: Add 1001 (3e9)
+Add temp 21.350000, encoded as 1fffeAdd bit 1
+Add bit 1
+Add 15 (f)
+Add 16 (10)
+Add 65535 (ffff)
+Adding time 5188, encoded as -14: Add 2 (2)
+Add -14 (fffffff2)
+Add temp 21.549999, encoded as 6aaabAdd bit 1
+Add bit 1
+Add 13 (d)
+Add 19 (13)
+Add 436907 (6aaab)
+Adding time 6267, encoded as 92: Add 6 (6)
+Add 92 (5c)
+Add temp 21.230000, encoded as 5b16cAdd bit 1
+Add bit 1
+Add 13 (d)
+Add 17 (11)
+Add 93275 (16c5b)
+Adding time 7200, encoded as -146: Add 6 (6)
+Add -146 (ffffff6e)
+Add temp 22.010000, encoded as 19c371Add bit 1
+Add bit 1
+Add 11 (b)
+Add 21 (15)
+Add 1688433 (19c371)
+Adding time 8200, encoded as 67: Add 6 (6)
+Add 67 (43)
+Add 1 (1)
+Buffer size: 36
+ ****** buffer ****** 
+ 0 : 00101000 (0x28)
+ 1 : 00110101 (0x35)
+ 2 : 01001100 (0x4c)
+ 3 : 11001100 (0xcc)
+ 4 : 11000000 (0xc0)
+ 5 : 00000000 (0x0)
+ 6 : 00000001 (0x1)
+ 7 : 10010000 (0x90)
+ 8 : 00011011 (0x1b)
+ 9 : 11010001 (0xd1)
+10 : 10101010 (0xaa)
+11 : 10101010 (0xaa)
+12 : 10000000 (0x80)
+13 : 00011111 (0x1f)
+14 : 01001110 (0x4e)
+15 : 11110100 (0xf4)
+16 : 00111111 (0x3f)
+17 : 11111111 (0xff)
+18 : 11101110 (0xee)
+19 : 01011011 (0x5b)
+20 : 01010011 (0x53)
+21 : 11010101 (0xd5)
+22 : 01010101 (0x55)
+23 : 01111000 (0x78)
+24 : 10111001 (0xb9)
+25 : 10110101 (0xb5)
+26 : 00011011 (0x1b)
+27 : 01100010 (0x62)
+28 : 11011110 (0xde)
+29 : 10110111 (0xb7)
+30 : 01101011 (0x6b)
+31 : 01010111 (0x57)
+32 : 00111000 (0x38)
+33 : 01101110 (0x6e)
+34 : 00111000 (0x38)
+35 : 10000110 (0x86)
+36 : 00000000 (0x0)
+37 : 00000000 (0x0)
+38 : 00000000 (0x0)
+39 : 00000000 (0x0)
+40 : 00000000 (0x0)
+41 : 00000000 (0x0)
+42 : 00000000 (0x0)
+43 : 00000000 (0x0)
+44 : 00000000 (0x0)
+45 : 00000000 (0x0)
+46 : 00000000 (0x0)
+Python buffer: b'\x28\x35\x4c\xcc\xc0\x00\x01\x90\x1b\xd1\xaa\xaa\x80\x1f\x4e\xf4\x3f\xff\xee\x5b\x53\xd5\x55\x78\xb9\xb5\x1b\x62\xde\xb7\x6b\x57\x38\x6e\x38\x86'
+ ****** buffer ****** 
