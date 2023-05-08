@@ -10,7 +10,7 @@ A great protocol for this is LoRa because of its inherent long range and low pow
 
 ## Data Compression Algorithm:
 
-The data we are sending is a type of time series because the temperature measurements are recorded sequentially in time. Because the measurements aren’t necessarily guaranteed to be equally spaced, we wanted to send both the temperature and the time for each measurement. The temperature received from the sensor is a float and the time sent is an unsigned int (32 bits) measured in seconds. We based our compression off of [Google’s Gorilla algorithm](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf?ref=timescale.com).
+The data we are sending is a type of time series because the temperature measurements are recorded sequentially in time. Because the measurements aren’t necessarily guaranteed to be equally spaced, we wanted to send both the temperature and the time for each measurement. The temperature received from the sensor is a float and the time sent is an unsigned int (32 bits) measured in seconds. We based our compression off of [Facebook's Gorilla algorithm](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf?ref=timescale.com).
 
 The first float is sent in full, and all following values are sent as the XOR with the previous float. Because the floats are likely to be close in magnitude, there will likely be duplicated bits, which are then not transmitted. In order to take advantage of the smaller number of significant values, we employed methods to account for leading and trailing zeros. An example of the float compression in shown below:
 
